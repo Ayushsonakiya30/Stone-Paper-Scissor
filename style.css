@@ -1,0 +1,178 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+  }
+  
+  .choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+  }
+  
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  
+  .msg-container {
+    margin-top: 5rem;
+  }
+  
+  #msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  } */
+
+
+
+  /* Reset margin, padding, and center align text for all elements to ensure consistency */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center align all text */
+    font-family: 'Poppins', sans-serif; /* Apply a modern font style */
+}
+
+/* Style for the main heading (h1) */
+h1 {
+    background-color: linear-gradient(135deg, #081b31, #1a3a5f); /* Gradient background for a stylish look */
+    color: #fff; /* Set text color to white */
+    height: 5rem; /* Set the height of the h1 element */
+    line-height: 5rem; /* Vertically center the text within the h1 element */
+    font-size: 3rem; /* Larger font size for emphasis */
+    text-transform: uppercase; /* Make text uppercase for impact */
+    letter-spacing: 2px; /* Add spacing between letters */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Style for the choice elements */
+.choice {
+    height: 165px; /* Set the height of the choice elements */
+    width: 165px; /* Set the width of the choice elements */
+    border-radius: 50%; /* Make the choice elements circular */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background: linear-gradient(135deg, #1a3a5f, #081b31); /* Gradient background for a modern touch */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect for choice elements */
+.choice:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #1a3a5f; /* Change background color to a lighter blue on hover */
+    transform: scale(1.1); /* Slightly enlarge the element on hover */
+}
+
+/* Style for images within choice elements */
+img {
+    height: 150px; /* Set the height of the images */
+    width: 150px; /* Set the width of the images */
+    object-fit: cover; /* Ensure the image covers the entire container without stretching */
+    border-radius: 50%; /* Make the images circular */
+    border: 4px solid #fff; /* Add a white border for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Style for the container holding multiple choice elements */
+.choices {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the choice elements horizontally */
+    align-items: center; /* Center the choice elements vertically */
+    gap: 3rem; /* Add space between choice elements */
+    margin-top: 5rem; /* Add space above the choices container */
+}
+
+/* Style for the scoreboard section */
+.score-board {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the scoreboard horizontally */
+    align-items: center; /* Center the scoreboard vertically */
+    font-size: 2rem; /* Set font size for the scoreboard text */
+    margin-top: 3rem; /* Add space above the scoreboard */
+    gap: 5rem; /* Add space between score elements */
+    background: linear-gradient(135deg, #081b31, #1a3a5f); /* Gradient background for a stylish look */
+    padding: 1rem; /* Add padding around the scoreboard */
+    border-radius: 1rem; /* Round the corners of the scoreboard */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Style for the user and computer scores */
+#user-score,
+#comp-score {
+    font-size: 4rem; /* Set larger font size for emphasis */
+    color: #ffcc00; /* Use a vibrant yellow color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow for depth */
+}
+
+/* Style for the message container */
+.msg-container {
+    margin-top: 5rem; /* Add space above the message container */
+}
+
+/* Style for the message display */
+#msg {
+    background-color: #1a3a5f; /* Set background color to a lighter blue */
+    color: #fff; /* Set text color to white */
+    font-size: 2rem; /* Set font size for the message text */
+    display: inline; /* Display the message inline */
+    padding: 1rem 2rem; /* Add padding inside the message box */
+    border-radius: 1rem; /* Round the corners of the message box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    animation: fadeIn 1s ease-in-out; /* Add a fade-in animation */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
